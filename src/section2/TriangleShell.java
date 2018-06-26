@@ -5,6 +5,7 @@ import org.jointheleague.graphical.robot.Robot;
 public class TriangleShell {
 
 	// 1. Create a new Robot
+	Robot P = new Robot();
 
 	
 	void go() {
@@ -28,11 +29,15 @@ public class TriangleShell {
 
 	/* 2. fill in the method below to draw a triangle. Use the length variable when you call move(). */
 	private void drawTriangle(int length) {
+		P.penDown();
+		for(int i=0; i<3;i++) {
+			P.move(length);
+			P.turn(360/3);
 		
 		
 		
 	}
-
+	}
 	
 	public static void main(String[] args) {
 		new TriangleShell().go();
